@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: vector-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ahrenJ/springcloud-practice-config
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+
+server:
+  port: 9300

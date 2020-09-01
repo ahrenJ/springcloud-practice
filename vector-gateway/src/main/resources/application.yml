@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: vector-gateway
+
+server:
+  port: 9400
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+    enabled: false

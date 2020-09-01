@@ -1,0 +1,13 @@
+replication: standlone
+
+spring:
+  application:
+    name: vector-bizservice
+
+server:
+  port: 9100
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka

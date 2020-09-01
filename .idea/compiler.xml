@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="vector-bizservice-consumer" />
+        <module name="vector-tracing" />
+        <module name="vector-config-client" />
+        <module name="vector-bizservice" />
+        <module name="vector-config-server" />
+        <module name="vector-gateway" />
+        <module name="vector-eureka" />
+        <module name="springcloud-practice" />
+        <module name="vector-elasticsearch" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="vector-bizservice" options="-parameters" />
+      <module name="vector-bizservice-consumer" options="-parameters" />
+      <module name="vector-config-client" options="-parameters" />
+      <module name="vector-config-server" options="-parameters" />
+      <module name="vector-elasticsearch" options="-parameters" />
+      <module name="vector-eureka" options="-parameters" />
+      <module name="vector-gateway" options="-parameters" />
+      <module name="vector-tracing" options="-parameters" />
+    </option>
+  </component>
+</project>

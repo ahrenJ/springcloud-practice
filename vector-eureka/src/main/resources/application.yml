@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: vector-eureka-server
+
+server:
+  port: 9000
+
+eureka:
+  server:
+    eviction-interval-timer-in-ms: 30000   #移除失效的服务时间间隔,30s
+  client:
+    register-with-eureka: false   #是否向eureka server注册，默认true
+    fetch-registry: false         #是否从eureka server获取实例注册信息，默认ture
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka

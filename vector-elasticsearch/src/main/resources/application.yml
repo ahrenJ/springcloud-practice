@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: vector-elasticsearch
+  elasticsearch:
+    rest:
+      uris: http://localhost:9200
+  profiles:
+    active: prod
+
+server:
+  port: 9401
+eureka:
+  client:
+    enabled: false
+    service-url:
+      defaultZone: http://localhost:9200/eureka

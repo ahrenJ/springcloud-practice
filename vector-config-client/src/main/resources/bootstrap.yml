@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: vector-config-client
+  cloud:
+    config:
+      discovery:
+        enabled: true                      #通过注册中心自动寻找配置中心服务端
+        service-id: vector-config-server   #配置中心服务端应用名
+      name: vector-config-client           #配置文件名
+      profile: prod                        #profile
+      label: master                        #git分支
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
