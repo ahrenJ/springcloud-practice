@@ -1,12 +1,14 @@
 spring:
   application:
     name: vector-bizservice-consumer
+  #zikpin调用链路可视化
   zipkin:
     base-url: http://127.0.0.1:9411
     discovery-client-enabled: false
     sender:
       type: web
     enabled: false
+  #sleuth服务调用链路追踪
   sleuth:
     sampler:
       rate: 100  #抽样采集率(%)

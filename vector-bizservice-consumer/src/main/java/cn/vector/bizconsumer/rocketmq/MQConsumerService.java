@@ -42,7 +42,7 @@ public class MQConsumerService {
                 return ConsumeConcurrentlyStatus.RECONSUME_LATER;
             }
         });
-        consumer.start();
-        logger.info("RocketMQ消费者初始化成功");
+        //consumer.start();
+        //logger.info("RocketMQ消费者初始化成功");
     }
 }

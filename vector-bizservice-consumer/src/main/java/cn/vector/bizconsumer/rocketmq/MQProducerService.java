@@ -27,8 +27,8 @@ public class MQProducerService {
     public void init() throws MQClientException {
         producer = new DefaultMQProducer("vector_producer");
         producer.setNamesrvAddr("127.0.0.1:9876");
-        producer.start();
-        logger.info("RocketMQ生产者初始化成功");
+        //producer.start();
+        //logger.info("RocketMQ生产者初始化成功");
     }
 
     /**
