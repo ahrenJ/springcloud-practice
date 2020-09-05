@@ -6,7 +6,7 @@
 - vector-bizservice：服务提供
 - vector-bizservice-consumer: 模拟服务调用、负载均衡
 ##### Config Center
-- vector-config-server：配置中心
+- vector-config-server：配置中心（配置文件库：https://github.com/ahrenJ/springcloud-practice-config）
 - vector-config-client：模拟从配置中心读取配置
 ##### Gateway
 - vector-gateway：服务网关
